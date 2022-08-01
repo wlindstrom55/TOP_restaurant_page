@@ -1,5 +1,6 @@
 function createMenu() {
     const content = document.getElementById('content');
+    content.innerHTML = '';
 
     //menu title
     const menuHead = document.createElement('div');
@@ -37,6 +38,8 @@ function createMenu() {
     menu3Desc.innerHTML = 'Chorizo sausage slowly cooked in a cider.';
     menu3.append(menu3Desc);
     content.append(menu3);
+
+    //#4 
 
 }
 

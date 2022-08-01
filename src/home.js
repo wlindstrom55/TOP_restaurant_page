@@ -1,13 +1,13 @@
 function createHome() {
     const content = document.getElementById('content');
+    content.innerHTML = '';
 
-    //header for restaurant:
-    const headerDiv = document.createElement('div');
-    const title = document.createElement('h1');
-    headerDiv.append(title);
-    title.innerHTML = "Tapas de Nebraska";
-    //title.classList.add('')
-    content.append(headerDiv);
+    //header for restaurant: (now putting at top of page)
+    // const headerDiv = document.createElement('div');
+    // const title = document.createElement('h1');
+    // headerDiv.append(title);
+    // title.innerHTML = "Tapas de Nebraska";
+    // content.append(headerDiv);
     
     //about section
     const desc = document.createElement('div');
@@ -16,7 +16,7 @@ function createHome() {
     descT.innerHTML = 'About:';
     desc.append(descT);
     desc.append(descP);
-    descP.innerHTML = 'Tapas de Nebraska is a new tapas bar in Nebraska, the first of its kind! Our aim is to bring the joy of fine Spanish cuisine to the plains of the Midwest.'
+    descP.innerHTML = 'Tapas de Nebraska is a new tapas bar in Nebraska, the first of its kind that the website designer knows of! Our aim is to bring the joy of fine Spanish cuisine to the plains of the Midwest.'
     content.append(desc);
 
     //hours section

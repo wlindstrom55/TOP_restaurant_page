@@ -1,0 +1,45 @@
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    display: flex;
+    flex-direction: row;
+}
+nav {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+nav div {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s; 
+}
+nav div:hover {
+    background-color: #ddd;
+}
+nav div.active {
+    background-color: #ccc;
+}
+
+#content {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+}
+
+p {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}

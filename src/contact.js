@@ -1,5 +1,6 @@
 function createContact() {
-    const content = document.querySelector('content');
+    const content = document.getElementById('content');
+    content.innerHTML = '';
 
     const headDiv = document.createElement('div');
     const head = document.createElement('h1');
