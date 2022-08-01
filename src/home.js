@@ -1,6 +1,6 @@
 function createHome() {
     const content = document.getElementById('content');
-    
+
     //header for restaurant:
     const headerDiv = document.createElement('div');
     const title = document.createElement('h1');
@@ -12,7 +12,7 @@ function createHome() {
     //about section
     const desc = document.createElement('div');
     const descP = document.createElement('p');
-    const descT = document.createElement('h1');
+    const descT = document.createElement('h2');
     descT.innerHTML = 'About:';
     desc.append(descT);
     desc.append(descP);
@@ -21,13 +21,16 @@ function createHome() {
 
     //hours section
     const hoursDiv = document.createElement('div');
+    const hoursTitle = document.createElement('h2');
+    hoursTitle.innerHTML = 'Hours:';
     const hours = document.createElement('p');
-    hours.innerHTML = 'Sunday: 8am - 12pm <br>Monday: 8am - 10pm <br>Tuesday: 8am - 10pm <br>Wednesday: 8am - 10pm <br>Thursday: 8am - 10pm <br>Friday: 8am - 12pm <br>Saturday: 8am - 12pm';
-    content.append('hoursDiv');
+    hours.innerHTML = '<b>Hours:</b><br>Sunday: 8am - 12pm <br>Monday: 8am - 10pm <br>Tuesday: 8am - 10pm <br>Wednesday: 8am - 10pm <br>Thursday: 8am - 10pm <br>Friday: 8am - 12pm <br>Saturday: 8am - 12pm';
+    hoursDiv.append(hours);
+    content.append(hoursDiv);
 
     //address div
     const locDiv = document.createElement('div');
-    const loc = document.createElement('h1');
+    const loc = document.createElement('h2');
     loc.innerHTML = "Address:";
     const locC = document.createElement('p');
     locC.innerHTML = '777 O Street, Lincoln, NE';
@@ -36,4 +39,7 @@ function createHome() {
     content.append(locDiv);
 }
 
-export default createHome();
+//export default createHome();
+export {
+    createHome
+};

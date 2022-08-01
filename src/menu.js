@@ -1,4 +1,4 @@
-export default createMenu = () => {
+function createMenu() {
     const content = document.getElementById('content');
 
     //menu title
@@ -38,4 +38,9 @@ export default createMenu = () => {
     menu3.append(menu3Desc);
     content.append(menu3);
 
+}
+
+//export default createMenu();
+export {
+    createMenu
 };
