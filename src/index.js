@@ -17,7 +17,7 @@ import { createContact } from "./contact.js";
 const homeTab = document.getElementById('hometab');
 const contactTab = document.getElementById('contacttab');
 const menuTab = document.getElementById('menutab');
-createHome(); //running this w/ function invocation is necessary for default page
+createHome(); //running this w/ function invocation is necessary for default behavior on page-load
 homeTab.addEventListener('click', createHome); //run the function itself instead of placing in anon
 contactTab.addEventListener('click', createContact);
 menuTab.addEventListener('click', createMenu);

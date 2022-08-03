@@ -4,7 +4,8 @@ function createContact() {
 
     const headDiv = document.createElement('div');
     const head = document.createElement('h1');
-    head.innerHTML = 'Contact Us:';
+    head.setAttribute('class', 'tabhead');
+    head.innerHTML = 'Please Contact Us:';
     headDiv.append(head);
     content.append(headDiv);
 

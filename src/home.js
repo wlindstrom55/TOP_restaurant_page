@@ -2,7 +2,7 @@ function createHome() {
     const content = document.getElementById('content');
     content.innerHTML = '';
 
-    //header for restaurant: (now putting at top of page)
+    //header for restaurant: (now putting at top of page by default)
     // const headerDiv = document.createElement('div');
     // const title = document.createElement('h1');
     // headerDiv.append(title);
@@ -12,7 +12,8 @@ function createHome() {
     //about section
     const desc = document.createElement('div');
     const descP = document.createElement('p');
-    const descT = document.createElement('h2');
+    const descT = document.createElement('h1');
+    descT.setAttribute('class', 'tabhead');
     descT.innerHTML = 'About:';
     desc.append(descT);
     desc.append(descP);

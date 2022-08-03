@@ -5,6 +5,7 @@ function createMenu() {
     //menu title
     const menuHead = document.createElement('div');
     const menuH = document.createElement('h1');
+    menuH.setAttribute('class', 'tabhead');
     menuH.innerHTML = 'Menu:';
     menuHead.append(menuH);
     content.append(menuHead);
@@ -14,6 +15,13 @@ function createMenu() {
     const menu1Title = document.createElement('h2');
     menu1Title.innerHTML = 'Alb&oacute;ndigas';
     menu1.append(menu1Title);
+    const meatballsDiv = document.createElement('div');
+    meatballsDiv.setAttribute('class', 'image-container');
+    const meatballs = document.createElement('img');
+    meatballs.setAttribute('src', '../src/img/meatballs.jpg');
+    meatballs.setAttribute('class', 'menuimage');
+    meatballsDiv.append(meatballs);
+    menu1.append(meatballsDiv);
     const menu1Desc = document.createElement('p');
     menu1Desc.innerHTML = 'Pretty much meatballs with sauce.';
     menu1.append(menu1Desc);
